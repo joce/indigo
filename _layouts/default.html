@@ -43,8 +43,9 @@ layout: compress
     </div>
 
     {% include icons.html %}
-
-    {% include analytics-google.html %}
+    {% if site.analytics-google %}
+        {% include analytics-google.html %}
+    {% endif %}
 
 </body>
 </html>
