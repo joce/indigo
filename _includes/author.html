@@ -1,4 +1,4 @@
-<section class="author{% if site.disqus == false %} no-disqus{% endif %}">
+<section class="author{% if site.disqus.use == false %} no-disqus{% endif %}">
     <div class="toleft">
         <img class="selfie" src="{% if site.authors[page.author].external-image == true %}{{ site.authors[page.author].picture }}{% else %}{{ site.url }}/{{ site.authors[page.author].picture }}{% endif %}" alt="{{ site.authors[page.author].name }}" alt="author selfie">
     </div>
@@ -19,7 +19,7 @@
             </a>
 
             <!-- <a class="google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
-                <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
+                <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg><span class="icon-google">Share</span>
             </a> -->
 
             <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}&amp;summary={{ page.description }}&amp;source={{ site.url }}" target="_blank">
@@ -29,6 +29,6 @@
             <!-- <a class="reddit" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank">
                 <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
             </a> -->
-        </div>
+        <!-- </div> -->
     </div>
 </section>
